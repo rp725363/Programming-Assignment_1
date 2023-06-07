@@ -1,0 +1,68 @@
+Q.1 Write a Python program to print "Hello Python"?
+Ans:-
+print("Hello Python")
+Q.2 Write a Python program to do arithmetical operations addition and division.?
+Ans:-
+Here's a Python program that performs addition and division operations
+def addition(a, b):
+    return a + b
+def division(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Cannot divide by zero"
+# Test addition
+num1 = 5
+num2 = 3
+result_addition = addition(num1, num2)
+print(f"The sum of {num1} and {num2} is: {result_addition}")
+# Test division
+num3 = 10
+num4 = 2
+result_division = division(num3, num4)
+print(f"The division of {num3} by {num4} is: {result_division}")
+
+Q.3 Write a Python program to find the area of a triangle?
+Ans:-
+Here's a Python program that calculates the area of a triangle
+def calculate_triangle_area(base, height):
+    area = 0.5 * base * height
+    return area
+
+# Input the base and height of the triangle
+base = float(input("Enter the base length of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
+
+# Calculate the area of the triangle
+area = calculate_triangle_area(base, height)
+# Print the result
+print(f"The area of the triangle with base {base} and height {height} is: {area}")
+
+Q.4 Write a Python program to swap two variables?
+Ans:-
+Here's a Python program that swaps the values of two variables
+def swap_variables(a, b):
+    a, b = b, a
+    return a, b
+# Input the values of the variables
+var1 = input("Enter the value of the first variable: ")
+var2 = input("Enter the value of the second variable: ")
+# Print the original values
+print("Original values:")
+print(f"Variable 1: {var1}")
+print(f"Variable 2: {var2}")
+# Swap the variables
+var1, var2 = swap_variables(var1, var2)
+# Print the swapped values
+print("\nAfter swapping:")
+print(f"Variable 1: {var1}")
+print(f"Variable 2: {var2}")
+
+Q.4 Write a Python program to generate a random number?
+Ans:-
+Here's a Python program that generates a random number using the random module.
+import random
+# Generate a random number between 1 and 100 (inclusive)
+random_number = random.randint(1, 100)
+# Print the random number
+print("Random number:", random_number)
